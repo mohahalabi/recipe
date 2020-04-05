@@ -1,6 +1,6 @@
 import React from 'react';
 import carousel_image2 from './images/carousel_image2.jpg';
-import carousel_image3 from './images/carousel_image3.jpg';
+import carousel_image1 from './images/carousel_image1.jpg';
 
 
 function Header() {
@@ -13,7 +13,7 @@ function Header() {
             </ol>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src={carousel_image3} className="d-block w-100" alt="..." />
+                    <img src={carousel_image1} className="d-block w-100" alt="..." />
                     <div className="carousel-caption d-none d-md-block">
                         <h2 className="display-4 shadowOutline m-4">Search for your recipe and make it</h2>
                     </div>
