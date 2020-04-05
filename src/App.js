@@ -54,7 +54,8 @@ function App() {
         <Header />
       </div>
       <Switch>
-        <Route path="/" exact render={() =>
+        <Route path="/recipes/:uri" exact component={RecipeDetails} />
+        <Route path="/*" exact render={() =>
           <div className="container-fluid mt-4 mb-5">
             <div className="d-flex mb-5 justify-content-center align-items-center">
               <form className="form-inline my-sm-2 my-lg-0" onSubmit={getSearch}>
@@ -82,8 +83,6 @@ function App() {
             </div >
           </div >
         } />
-
-        <Route path="/:uri" component={RecipeDetails} />
       </Switch>
     </Router>
   );
